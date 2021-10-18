@@ -1,0 +1,69 @@
+{
+  "highlighted": [
+    {
+      "title": "Radarr",
+      "url": "http://radarr"
+    },
+    {
+      "title": "Sonarr",
+      "url": "http://sonarr"
+    },
+    {
+      "title": "Lidarr",
+      "url": "http://lidarr"
+    },
+    {
+      "title": "Deluge",
+      "url": "http://deluge"
+    },
+    {
+      "title": "Home Assistant",
+      "url": "http://homeassistant"
+    }
+  ],
+  "sections": [
+    {
+      "title": "First column",
+      "links": [
+        {
+          "title": "First link",
+          "url": "http://whatever"
+        },
+        {
+          "title": "Second",
+          "url": "http://doobidoobidoo"
+        }
+      ]
+    },
+    {
+      "title": "Second column",
+      "links": [
+        {
+          "title": "First link",
+          "url": "http://whatever"
+        },
+        {
+          "title": "Second",
+          "url": "http://doobidoobidoo"
+        },
+        {
+          "title": "Second",
+          "url": "http://doobidoobidoo"
+        }
+      ]
+    },
+    {
+      "title": "Third",
+      "links": [
+        {
+          "title": "First link",
+          "url": "http://whatever"
+        },
+        {
+          "title": "Second",
+          "url": "http://doobidoobidoo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<div class="relative" data-controller="search" data-search-active-class="bg-gray-700 bg-opacity-50 text-white">
+  <input
+    class="bg-gray-900 placeholder-gray-600 rounded w-full py-2 px-4 text-gray-200 focus:outline-none focus:ring
+      focus:ring-pink-500"
+    id="inline-full-name"
+    type="text"
+    value=""
+    placeholder="Lightspeed turbo actions"
+    autofocus="autofocus"
+    data-search-target="input"
+    data-action="focus->search#showResults keydown->search#navigate input->search#showResults blur->search#hideResults"/>
+  <div
+    class="absolute bg-gray-900 bg-opacity-70 rounded text-gray-400 px-2 py-3 top-11 right-0 left-0 backdrop-filter
+      backdrop-blur-lg hidden"
+    data-search-target="results">
+    <div data-search-target="hint" class="py-1 px-2 mb-2 text-gray-600"></div>
+    <template data-search-target="resultLinkTemplate">
+      <li data-search-target="resultsListItem">
+        <a href="${url}" class="block py-1 px-2">
+          ${title} &mdash;
+          <span class="text-gray-600 pl-1">${url}</span>
+        </a>
+      </li>
+    </template>
+    <ul class="flex flex-col" data-search-target="resultsList"></ul>
+    <div data-search-target="noResults" class="py-1 px-2 text-gray-600">No internal results &nbsp; (╯°□°)╯︵ ┻━┻</div>
+  </div>
+</div>

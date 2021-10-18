@@ -1,0 +1,36 @@
+---
+layout: default
+title: Nitroboard
+---
+
+<div class="fixed inset-0 flex justify-center items-center">
+  <div class="">
+    <div class="mb-7">
+      {% include "search.njk" %}
+    </div>
+    <div class="mb-7">
+      <ul class="flex px-8 py-6 gap-8 justify-between items-center bg-gray-700 rounded-lg">
+        {%- for link in links.highlighted %}
+          <li>
+            <a href="{{ link.url }}" target="_blank" class="flex flex-col items-center">
+              <div class="w-16 h-16 bg-gray-600 mb-2 rounded-3xl"></div>
+              <span class="text-gray-400">{{ link.title }}</span>
+            </a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+      {%- for section in links.sections %}
+        <div>
+          <h3 class="text-gray-500 font-bold border-b border-gray-700 pb-2 mb-4">{{ section.title }}</h3>
+          <ul>
+            {%- for link in section.links %}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {%- endfor %}
+          </ul>
+        </div>
+      {%- endfor %}
+    </div>
+  </div>
+</div>
