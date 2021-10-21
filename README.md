@@ -1,3 +1,21 @@
+## Temp readme for Nitroboard
+
+### TODO list
+- Clean code
+
+### Idea brainstorm
+- Light/dark mode
+- Color schemes (not full custom themes)
+- Widgets
+  - What are you focused on today
+  - Weather
+- Fetch data like bitbar
+-
+
+<!--
+
+Commented old readme. Will keep attribution and some stuff.
+
 # Eleventy Origin
 
 ![Origin Logo](src/images/origin.png)
@@ -86,4 +104,4 @@ This starter is also preconfigured to be easily deployable to Netlify and Now. I
 
 ## Thanks
 
-Thanks to everyone who contributes to Eleventy, the numerous packages it depends on.
+Thanks to everyone who contributes to Eleventy, the numerous packages it depends on. -->

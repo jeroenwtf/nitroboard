@@ -90,7 +90,7 @@ export default class extends Controller {
           const urlEncodedText = encodeURIComponent(this.inputTarget.value)
           url = `https://www.google.com/search?q=${urlEncodedText}`
         } else {
-          url = links[this.currentResultIndex].url
+          url = linksList[this.currentResultIndex].url
         }
 
         window.location = url;
@@ -106,7 +106,7 @@ export default class extends Controller {
       })
     })
 
-    this.hintTarget.innerText = `Press enter to open ${links[this.currentResultIndex].title}.`
+    this.hintTarget.innerText = `Press enter to open ${linksList[this.currentResultIndex].title}.`
   }
 
   selectNextResult() {
