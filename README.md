@@ -10,7 +10,6 @@
   - What are you focused on today
   - Weather
 - Fetch data like bitbar
--
 
 <!--
 

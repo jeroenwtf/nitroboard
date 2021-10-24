@@ -2,23 +2,28 @@
   "highlighted": [
     {
       "title": "Radarr",
-      "url": "http://radarr"
+      "url": "http://radarr",
+      "logo": "radarr.png"
     },
     {
       "title": "Sonarr",
-      "url": "http://sonarr"
+      "url": "http://sonarr",
+      "logo": "sonarr.png"
     },
     {
       "title": "Lidarr",
-      "url": "http://lidarr"
+      "url": "http://lidarr",
+      "logo": "lidarr.png"
     },
     {
       "title": "Deluge",
-      "url": "http://deluge"
+      "url": "http://deluge",
+      "logo": "deluge.png"
     },
     {
       "title": "Home Assistant",
-      "url": "http://homeassistant"
+      "url": "http://homeassistant",
+      "logo": "home-assistant.png"
     }
   ],
   "sections": [

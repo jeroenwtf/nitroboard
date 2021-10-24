@@ -9,11 +9,17 @@ title: Nitroboard
       {% include "search.njk" %}
     </div>
     <div>
-      <ul class="flex px-8 py-6 gap-8 justify-between items-start bg-gray-700 bg-opacity-60 rounded-lg">
+      <ul class="flex px-8 py-6 gap-6 justify-between items-start bg-gray-700 bg-opacity-60 rounded-lg">
         {%- for link in links.highlighted %}
           <li class="w-16">
             <a href="{{ link.url }}" target="_blank" class="flex flex-col items-center rounded text-center p-2 focus:outline-none focus:ring focus:ring-pink-500">
-              <div class="w-14 h-14 bg-gray-600 bg-opacity-50 mb-2 rounded-2xl"></div>
+              <div class="mb-2">
+                {% if link.logo %}
+                  <img src="/assets/images/logos/{{ link.logo }}" alt="{{ link.title }}" />
+                {% else %}
+                  <div class="w-12 h-12 bg-gray-600 bg-opacity-50 rounded-2xl"></div>
+                {% endif %}
+              </div>
               <span class="text-gray-400 text-sm">{{ link.title }}</span>
             </a>
           </li>
